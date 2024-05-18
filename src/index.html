@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- npx tailwindcss -i ./src/styles.css -o ./src/output.css --watch -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="w-96 h-auto bg-gradient-to-r from-[#bfdbfe] to-[#a5f3fc]">
+    <!-- Title -->
+    <div class="title-card m-2 flex justify-center">
+        <h1 class="font-sans text-3xl font-bold">Time Tracker ⏱</h1>
+    </div>
+
+    <!-- Insert Task Name -->
+    <div class="flex justify-center mb-2">
+        <form action="" method="post">
+            <!-- Row 1 -->
+            <input type="text" placeholder="Add title" class="rounded-lg m-2">
+            <div class="flex justify-center space-x-2">
+                <input type="radio" name="color" value="tomato" class='bg-red-500 border-0 drop-shadow-lg cursor-pointer' />
+                <input type="radio" name="color" value="flamingo" class="bg-red-200 border-0 drop-shadow-lg cursor-pointer"/>
+                <input type="radio" name="color" value="orange" class="bg-orange-400 border-0 drop-shadow-lg cursor-pointer"/>
+                <input type="radio" name="color" value="banana" class="bg-yellow-300 border-0 drop-shadow-lg cursor-pointer"/>
+                <input type="radio" name="color" value="sage" class="bg-emerald-400 border-0 drop-shadow-lg cursor-pointer"/>
+                <input type="radio" name="color" value="basil" class="bg-emerald-900 border-0 drop-shadow-lg cursor-pointer"/>
+            </div>
+            <div class="flex justify-center space-x-2 m-2">
+                <input type="radio" name="color" value="peacock" class='bg-sky-500 border-0 drop-shadow-lg cursor-pointer'/>
+                <input type="radio" name="color" value="blueberry" class="bg-indigo-700 border-0 drop-shadow-lg cursor-pointer"/>
+                <input type="radio" name="color" value="lavender" class="bg-violet-400 border-0 drop-shadow-lg cursor-pointer"/>
+                <input type="radio" name="color" value="grape" class="bg-purple-700 border-0 drop-shadow-lg cursor-pointer"/>
+                <input type="radio" name="color" value="graphite" class="bg-stone-600 border-0 drop-shadow-lg cursor-pointer"/>
+            </div>
+
+            <!-- Start Timer -->
+            <div class="flex justify-center m-2">
+                <button type="submit" class="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-red-500 px-4 py-1.5 text-xs font-normal text-white transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-red-500/30">
+                    <span class="text-sm">Start Timer</span>
+                    <div class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
+                        <div class="relative h-full w-8 bg-white/20"></div>
+                    </div>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="flex justify-center mb-8">
+        <h1 class="font-sans text-6xl font-bold mb-8">
+            00:00:00
+        </h1>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Google Calendar Time Tracker",
+    "version": "1.0.0",
+    "description": "A time tracking feature for Google Calendar",
+    "author" : {
+        "name":"Hasan Al-Khazraji",
+        "email" : "hasanwatheq2014@gmail.com"
+    },
+    "action" : {
+        "default_title" : "Time Tracker",
+        "default_popup" : "./src/index.html"
+    }
+  }
