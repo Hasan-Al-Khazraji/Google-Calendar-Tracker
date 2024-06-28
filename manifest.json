@@ -10,5 +10,13 @@
     "action" : {
         "default_title" : "Time Tracker",
         "default_popup" : "./src/index.html"
-    }
+    },
+    "content_scripts": [
+        {
+            "js" : ["src/injectable.js"],
+            "matches": [
+                "https://calendar.google.com/*"
+            ]
+        }
+    ]
   }
